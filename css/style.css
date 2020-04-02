@@ -1,0 +1,47 @@
+body {
+	background-image: url("../img/background.gif");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+
+}
+
+h1, header, footer, .button, .main {
+	color: #FFFFFF;
+	margin: auto;
+	width: 60%;
+	border: 3px solid #DF0101;
+	padding: 10px;
+	background: #000000;
+	text-align: center;
+	border-radius: 10px;
+}
+
+a:link, a:visited, a:active {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+	text-decoration: none;
+}
+
+header {
+	margin-bottom: 10px;
+}
+
+footer {
+	margin-top: 10px;
+	font-style: italic;
+}
+.success {
+	color: #FFFFFF;
+	margin: auto;
+	width: 60%;
+	border: 3px solid #00FF00;
+	padding: 10px;
+	background: #000000;
+	text-align: center;
+}
+/* By MisterSanglad */

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fake Stresser</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Free Booter for everybody ! Because we all prefer when it's free ! UDP only: 300 sec max">
+		<meta name="author" content="Guillaume LADORME">
+		<meta name="keywords" content="Free, Booter, UDP, 300, seconds">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" type="image/png" href="img/favicon.png" />
+		<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" /><![endif]-->
+	</head>
+
+	<body>
+		<header>
+			<h1>Fake Stresser</h1>
+		</header>
+
+		<div class="main">
+			<form action="stress.php" method="get" oninput="seconds.value = parseInt(time.value)">
+			<input type="text" name="host" placeholder="Host IP" pattern="((^|\.)((25[0-5])|(2[0-4]\d)|(1\d\d)|([1-9]?\d))){4}$" title="IPv4 Adress only" autofocus required><br>
+			<input type="text" name="port" placeholder="Port (default: 80)" pattern="[0-9]{0,5}" required><br>
+			<label for="time">Time: </label><input type="range" id="time" name="time" min="0" max="300" step ="1" value ="1"> <label for="time"><output name="seconds"></output> seconds</label><br>
+			<select name="method" >
+				<option value="UDP">
+					UDP
+				</option>
+			</select>
+			<!-- Rajouter éventuellement ReCaptacha -->
+			<p><a href="tos.html" target="_blank">Terms of Service</a></p>
+			<button type="submit">I agree with TOS - Start the Stress</button>
+			</form>
+		</div>
+
+		<footer>
+			Powered by <a href="https://github.com/Gladorme">Guillaume LADORME</a>
+			<!-- Stresser non fonctionnel -->
+		</footer>
+	</body>
+</html>
